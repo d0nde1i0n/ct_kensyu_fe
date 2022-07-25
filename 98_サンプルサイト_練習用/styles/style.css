@@ -614,7 +614,7 @@ img {
   font-size: 17px;
 }
 
-.font-lr, .houses__title {
+.font-lr, .popular__title, .houses__title {
   font-size: 17px;
 }
 
@@ -622,7 +622,7 @@ img {
   font-size: 25px;
 }
 
-.mb-sm, .houses__title {
+.mb-sm, .popular__title, .houses__title {
   margin-bottom: 16px !important;
 }
 
@@ -630,7 +630,7 @@ img {
   margin-bottom: 80px !important;
 }
 
-.pb-sm {
+.pb-sm, .popular__container {
   padding-bottom: 16px !important;
 }
 
@@ -638,7 +638,7 @@ img {
   padding-bottom: 80px !important;
 }
 
-.content-with, .houses {
+.content-with, .popular__container, .popular__header, .houses {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -653,7 +653,7 @@ img {
   color: #535353;
 }
 
-.flex, .houses__inner {
+.flex, .popular__container, .houses__inner {
   display: flex;
   flex-direction: column;
 }
@@ -661,6 +661,22 @@ img {
 .houses__btn {
   text-align: center;
   flex-basis: 100%;
+}
+
+.popular__btn {
+  text-align: center;
+  flex-basis: 100%;
+}
+.popular__img {
+  height: 150px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.popular__img > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 @media (min-width: 480px) {
@@ -676,7 +692,7 @@ img {
   Stylesheet: 600px以上のタブレットやモニタで適用
 
   ******************************************************************/
-  .flex, .houses__inner {
+  .flex, .houses__inner, .popular__container {
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -697,13 +713,13 @@ img {
   .font-md {
     font-size: 19px;
   }
-  .font-lr, .houses__title {
+  .font-lr, .houses__title, .popular__title {
     font-size: 23px;
   }
   .font-lg, .main-title {
     font-size: 36px;
   }
-  .mb-sm, .houses__title {
+  .mb-sm, .houses__title, .popular__title {
     margin-bottom: 150px !important;
   }
   .pb-lg {
