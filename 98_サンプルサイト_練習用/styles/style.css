@@ -740,8 +740,15 @@ img {
   .popular__item {
     flex-basis: 47%;
   }
+  .travel__inner {
+    padding: 50px;
+  }
   .travel__texts, .travel__img {
     flex-basis: 47%;
+  }
+  .travel__texts {
+    display: flex;
+    align-items: flex-end;
   }
 }
 @media (min-width: 960px) {
@@ -774,6 +781,15 @@ img {
   .popular__img {
     height: 335px;
   }
+  .travel__img {
+    height: 400px;
+  }
+  .travel__sub {
+    margin-bottom: 15px !important;
+  }
+  .travel__description {
+    margin-bottom: 40px;
+  }
 }
 @media (min-width: 1280px) {
   /******************************************************************
@@ -781,6 +797,9 @@ img {
   Stylesheet: 1280px以上のモニタで適用
 
   ******************************************************************/
+  .travel__inner {
+    padding: 50px 150px;
+  }
   .popular__item {
     flex-basis: 23%;
   }
